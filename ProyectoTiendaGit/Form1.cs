@@ -28,7 +28,9 @@ namespace ProyectoTiendaGit
             {
                 case 4:
                     {
-                       
+                        IdProductos = int.Parse(dtgvProductos.Rows[fila].Cells[0].Value.ToString());
+                        mp.Borrar(IdProductos, dtgvProductos.Rows[fila].Cells[1].Value.ToString());
+                        dtgvProductos.Visible = true;
                     }
                     break;
                 case 5:
