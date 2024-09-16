@@ -37,7 +37,8 @@ namespace ProyectoTiendaGit
         {
             if (Form1.IdProductos > 0)
             {
-
+                mp.Modificar(txtNombre,txtDescripcion,txtPrecio,Form1.IdProductos);
+                Close();
             }
             else
                 mp.Guardar(txtNombre, txtDescripcion, txtPrecio);

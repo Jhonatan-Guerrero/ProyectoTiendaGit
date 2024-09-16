@@ -38,7 +38,7 @@ namespace ProyectoTiendaGit
                         {
                             IdProductos = int.Parse(dtgvProductos.Rows[fila].Cells[0].Value.ToString());
                             Nombre = dtgvProductos.Rows[fila].Cells[1].Value.ToString();
-                            Nombre = dtgvProductos.Rows[fila].Cells[2].Value.ToString();
+                            Descripcion = dtgvProductos.Rows[fila].Cells[2].Value.ToString();
                             precio = double.Parse(dtgvProductos.Rows[fila].Cells[3].Value.ToString());
                             
                             frmAgregarProductos ap = new frmAgregarProductos();
